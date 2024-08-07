@@ -3,6 +3,7 @@ console.log("Welcome to the main module")
 import { createPlan } from './plan.js'
 import { plantSeeds } from './tractor.js';
 import { usePlants } from './field.js';
+import { Catalog } from './catalog.js';
 
 
 const yearlyPlan = createPlan();
@@ -12,5 +13,6 @@ plantSeeds(yearlyPlan);
 
 const plantsInField =usePlants();
 console.log("Plants in Field", plantsInField)
+
 
 
