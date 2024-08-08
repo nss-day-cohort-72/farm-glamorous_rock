@@ -1,8 +1,11 @@
 export const Catalog = (harvestedFood) => {
-// const container = document.querySelector(".container")
+    let harvestedFoodHTML = ""
 
+    //iterates through the harvestedFood with for...of loop
     for (const food of harvestedFood) {
-        let harvestedFoodHTML = `<section class="plant">${food.type}</section>`
-        return harvestedFoodHTML
+        harvestedFoodHTML += `<section class="plant">${food.type}</section>`
     }
- }
+
+    //returns the html string
+    return harvestedFoodHTML
+}
