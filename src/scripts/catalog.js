@@ -3,7 +3,7 @@ export const Catalog = (harvestedFood) => {
 
     //iterates through the harvestedFood with for...of loop
     for (const food of harvestedFood) {
-        harvestedFoodHTML += `<section class="plant">${food.type}</section>`
+        harvestedFoodHTML += `<section class="plant col">${food.type}</section>`
     }
 
     //returns the html string
